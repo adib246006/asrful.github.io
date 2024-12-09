@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Delights Web Template</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Add a link to a CSS icon library if icons are not showing -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        // Function to show popup message
+        window.onload = function() {
+            alert("Welcome to ASHRAFUL'S Page");
+        };
+
+        // Function to convert grams to kilograms
+        function convertGramToKg() {
+            const grams = parseFloat(document.getElementById("gramsInput").value);
+            if (isNaN(grams)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+            const kilograms = grams / 1000;
+            document.getElementById("result").innerText = `Result: ${kilograms} kg`;
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <div>
+                <div id="logo">
+                    <a href="index.html"><img src="images/logo.gif" alt="Logo"></a>
+                </div>
+                <div>
+                    <div>
+                        <a href="signup.html">My Account</a>
+                        <a href="index.html">Help</a>
+                        <a href="signin.html" class="last">Sign in</a>
+                    </div>
+                    <form action="#">
+                        <input type="text" id="search" maxlength="30">
+                        <input type="submit" value="" id="searchbtn">
+                    </form>
+                </div>
+            </div>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/1200px-Flag_of_Bangladesh.svg.png">Homecountry</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div class="home">
+            <div class="aside">
+                <h1>Welcome to our site</h1>
+                <p>Pastry is the name given to various kinds of baked goods made from ingredients such as flour, butter, shortening, baking powder, or eggs. Small cakes, tarts, and other sweet baked goods are called &#34;pastries&#34;.</p> 
+                <p>Pastry may also refer to the dough from which such baked goods are made. Pastry dough is rolled out thinly and used as a base for baked goods. Common pastry dishes include pies, tarts, and quiches. 
+                <p>Pastry is distinguished from bread by having a higher fat content, which contributes to a flaky or crumbly texture. A good pastry is light and airy and fatty, but firm enough to support the weight of the filling. When making a shortcrust pastry, care must be taken to blend the fat and flour thoroughly before adding. <a href="index.html" class="readmore">read more</a></p>
+            </div>
+            <div class="section">
+                <div>
+                    <h2>The food story</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exercitation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                </div>
+                <ul>
+                    <li class="first">
+                        <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfQNG3r1VWM2AOaj6e2xzm3mFFIa6K1jTkg&s" alt="Image"></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="images/burgercake.jpg" alt="Image"></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><img src="images/cupcake.jpg" alt="Image"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Grams to Kilograms Converter -->
+        <div class="converter">
+            <h1>Grams to Kilograms Converter</h1>
+            <p>Enter grams below to convert them to kilograms:</p>
+            <input type="text" id="gramsInput" placeholder="Enter grams">
+            <button onclick="convertGramToKg()">Convert</button>
+            <p id="result"></p>
+			JavaScript Welcome Popup: Displays a message when the page loads.
+Grams to Kilograms Converter: Includes an input field, a button, and a display area for results.
+Changed 1 images to BD flag added social media link
+Footer Text: Added 24224503 ALAM MD ASHRAFUL
+        </div>
+    </div>
+    <div id="footer">
+        <div class="connect">
+            <span>Follow Us</span>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100036269897483" target="_blank" class="facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="http://twitter.com/fwtemplates" target="_blank" class="twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#" class="subscribe"><i class="fas fa-rss"></i> Subscribe</a></li>
+                <li><a href="http://www.flickr.com/freewebsitetemplates/" target="_blank" class="flicker"><i class="fab fa-flickr"></i> Flickr</a></li>
+            </ul>
+        </div>
+        <p>24224503 ALAM MD ASHRAFUL</p>
+    </div>
+</body>
+</html>
